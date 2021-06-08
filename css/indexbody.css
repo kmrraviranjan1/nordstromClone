@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Typography */
+
+
+
+
+
+
+
+
+/* parent position relative for divs having text over it */
+.psn-relative{
+    position: relative;
+}
+
+
+
+/* box id 1 noordClub */
+
+#noord-club-text-div{
+    position: absolute;
+    top: 1vw;
+    left: 40%;
+    transform: translateX(-40%);
+}
