@@ -71,3 +71,9 @@ function appendhealthGlowImgDiv() {
 setInterval(function () {
     appendhealthGlowImgDiv()
 }, 4000);
+
+
+//Health and glow images changing functionality 
+
+//box-3 functionality ends here
+
