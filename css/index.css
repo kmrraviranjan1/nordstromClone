@@ -142,3 +142,15 @@ img{
     display: flex;
 }
 
+
+
+
+
+/* ------------**********------------ */
+
+#shopping-idea img{
+    border-radius: 50%;
+}
+#shopping-idea div{
+    text-align: center;
+}
