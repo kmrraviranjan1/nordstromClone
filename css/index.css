@@ -23,7 +23,9 @@ img{
     max-width: 100%;
     max-height: 100%;
 }
-
+.empty-div{
+    height: 2rem;
+}
 
 
 /* --------------------------------------------------------------- */
@@ -47,6 +49,7 @@ img{
 .psn-absolute{
     position: absolute;
 }
+
 /* box id 1 noordClub */
 
 #noord-club-text-div{
@@ -56,8 +59,75 @@ img{
     
 }
 
+
+/* box 3 double duty summer */
 #double-duty-summer-txt-div{
+    top:25%;
+    left: 7%;
+}
+
+/* box 8 give a little small */
+#give-little-small-txt-div{
+    top:25%;
+    left: 22%;    
+}
+
+
+/* box 10 give a little big */
+#give-little-big-txt1-div{
+    top:45%;
+    left: 32%;    
+    
+    
+}
+#give-little-big-txt2-div{
+    bottom: 6%;
+    left: 22%;    
 
 }
+
+/* box 13 pride 21 */
+#pride21-txt-div{
+    top: 58%;
+    left: 45%;
+}
+
+/* box 17 design clearance */
+#design-clearance-txt-div{
+    top: 62%;
+    left: 38%;
+}
+
+/* box 21 see what new */
+#what-new-txt-div{
+    top:30%;
+    left: 25%;
+}
+
+/* box 23 hiring */
+#hiring-txt-div{
+    top: 35%;
+    left: 65%;
+}
+
+/* box 29  nordstrom trunk club*/
+
+
+#trunk-club-txt1-div{
+    top:44%;
+    left:3% ;
+}
+#trunk-club-txt2-div{
+    top:10%;
+    left: 30%;
+}
+
+/* box-35 stay in  touch */
+#stay-in-touch-txt-div{
+    top: 10%;
+    left: 10%;
+}
+
+
 
 /* ------------------------------------------------------------------- */
