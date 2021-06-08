@@ -47,7 +47,7 @@ setInterval(function () {
 // box 1 functionality ends here text is changing
 
 
-//box-3 functionality starts
+//box-5 functionality starts
 //Health and glow images changing functionality
 
 let healthGlowImg = ["images/indexImg/healthyGlow/d1.jpeg", "images/indexImg/healthyGlow/d2.jpeg"];
@@ -75,5 +75,36 @@ setInterval(function () {
 
 //Health and glow images changing functionality 
 
-//box-3 functionality ends here
+//box-5 functionality ends here
 
+
+
+//box-10 functionality starts
+//give a little Big  images changing functionality
+
+let giveLittleBigImg= ["images/indexImg/giveaLittleBig/d1.jpeg","images/indexImg/giveaLittleBig/d2.jpeg","images/indexImg/giveaLittleBig/d3.jpeg"];
+let k = 0;
+function appendgiveLittleBigImgDiv() {
+    let giveLittleBigImgDiv = document.getElementById('give-little-big-img-div');
+    giveLittleBigImgDiv.innerHTML = null;
+
+    if (k > 2) {
+        k = 0;
+    }
+
+    let myImg = document.createElement('img');
+    myImg.src = giveLittleBigImg[k];
+    giveLittleBigImgDiv.appendChild(myImg)
+
+
+    k++;
+
+}
+setInterval(function () {
+    appendgiveLittleBigImgDiv()
+}, 4000);
+
+
+//Health and glow images changing functionality 
+
+//box-5 functionality ends here
