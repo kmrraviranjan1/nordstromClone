@@ -30,7 +30,9 @@ img{
 
 /* --------------------------------------------------------------- */
 /* Typography */
-
+.cntr{
+    text-align: center;
+}
 
 
 
@@ -53,7 +55,7 @@ img{
 /* box id 1 noordClub */
 
 #noord-club-text-div{
-    top: 1vw;
+    top: 10%;
     left: 40%;
     transform: translateX(-40%);
     
