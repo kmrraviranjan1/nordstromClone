@@ -105,6 +105,7 @@ setInterval(function () {
 }, 4000);
 
 
-//Health and glow images changing functionality 
+//give a little wow big images changing functionality 
 
-//box-5 functionality ends here
+//box-10 functionality ends here
+
