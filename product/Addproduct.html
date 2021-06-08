@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        Nmae: <input type="text" id="name" placeholder="Product Nmae ">
+        Price: <input type="numbr" id="price" placeholder="Product Price">
+        Description <input type="text" id="description" placeholder="Description">
+        image: <input type="text" id="image" placeholder="image url">
+
+        <select name="" id="category">
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+            <option value="kid">Kids</option>
+            <option value="acttivewear">Activewear</option>
+            <option value="gift">Gifts</option>
+            <option value="beauty">Beauty</option>
+        </select>
+        <select name="" id="subcategory">
+            <option value="coatjacket">Coats & Jackets</option>
+            <option value="blazers">Blazers</option>
+            <option value="footwear">Footwear</option>
+           
+            <option value="jeans">Jeans</option>
+            <option value="shorts">shorts</option>
+            <option value="skirts">Skirts</option>
+
+        </select>
+    </form>
+    <button onclick="Addproduct()">Add Product</button>
+</body>
+
+</html>
+<script>
+    var productArr = localStorage.getItem("productlist") || []
+    productArr = JSON.parse(productArr)
+    function Addproduct() {
+        var name = document.getElementById("name").value
+        var price = document.getElementById("price").value
+        var category = document.getElementById("category").value
+        var subcategory = document.getElementById("subcategory").value
+        var image = document.getElementById("image").value
+        var description = document.getElementById("description").value
+
+        function Product(n, p, c, sc, img, d) {
+            this.Name = n,
+                this.Price = p,
+                this.Category = c,
+                this.Subcategory = sc
+            this.Image = img
+            this.Description = d
+        }
+        var product = new Product(name, price, category, subcategory, image, description)
+        productArr.push(product)
+        localStorage.setItem("productlist", JSON.stringify(productArr))
+    }
+    // Addproduct()
+    console.log(productArr)
+</script>
