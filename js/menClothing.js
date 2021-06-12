@@ -1,10 +1,11 @@
-const cltoth = [
+const cloth = [
     {
         category: "Activewear",
         subCategory: "Apparel-Pants",
         brand: "Polo Ralph Lauren",
         gender: "men",
         material: "100% cotton",
+        tag: "price matched",
         sale: "regular",
         fit: "true to size",
         size: "32 inch waist",
@@ -21,7 +22,7 @@ const cltoth = [
         rawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/1fe9de9d-9571-4d3a-87bc-8383e736a4e7.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
         videoIcon:"https://n.io.nordstrommedia.com/id/sr3/2ca0416c-aade-455a-a7a9-2f02c4190c20.jpeg",
         price: "2514.76",
-        rating: "4.5",
+        rating: "***",
         raters: "135"        
     },
     {
@@ -30,6 +31,7 @@ const cltoth = [
         brand: "NORDSTROM",
         gender: "men",
         material: "100% Linen",
+        tag: "new",
         sale: "regular",
         fit: "true to size",
         size: "Neck 15, sleeve 36,37",
@@ -46,9 +48,133 @@ const cltoth = [
         rawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/a0de479a-e188-486d-9db0-9c1be1e6381e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
         videoIcon:"",
         price: "5461.74",
-        rating: "4.5",
-        raters: "135"        
+        rating: "****",
+        raters: "(135)"        
+    },
+    {
+        category: "Suits & Separates",
+        subCategory: "Suit & sets",
+        brand: "TOPMAN",
+        gender: "men",
+        material: "100% Linen",
+        tag: "new",
+        sale: "regular",
+        fit: "classic fit",
+        size: "40R",
+        big: "regular",
+        style: "Business Casual",
+        color: "black",
+        name: "Skinny Fit Textured Suit Jacket",
+        description: "A lightly textured weave distinguishes a suit jacket tailored in a smart skinny fit and framed with handsome notch lapels.",
+        image: "https://n.io.nordstrommedia.com/id/sr3/b556fb09-66a4-4293-bf6f-ea05af9a2a0a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        imageIcon: "https://n.io.nordstrommedia.com/id/sr3/b556fb09-66a4-4293-bf6f-ea05af9a2a0a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        quickImage: "https://n.io.nordstrommedia.com/id/sr3/b7b55612-a216-417c-9548-9278f4d965fe.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        quickImageIcon:"https://n.io.nordstrommedia.com/id/sr3/b7b55612-a216-417c-9548-9278f4d965fe.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        rawMaterialImage: "https://n.io.nordstrommedia.com/id/sr3/b9858781-b775-4cde-ab0e-3b0cb27d29b0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        rawMaterialImageIcon: "https://n.io.nordstrommedia.com/id/sr3/b9858781-b775-4cde-ab0e-3b0cb27d29b0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        videoIcon:"https://n.io.nordstrommedia.com/id/sr3/9427c237-4d30-4d50-9398-d34224c8c33f.jpeg",
+        price: "10216.21",
+        rating: "****",
+        raters: "(5)"        
+    },
+    {
+        category: "Sweatshirts & Hoodies",
+        subCategory: "Apparel",
+        brand: "ZELLA",
+        gender: "men",
+        material: "100% Linen",
+        tag: "new",
+        sale: "regular",
+        fit: "true to size",
+        size: "L",
+        big: "regular",
+        style: "Pullover",
+        color: "blue",
+        name: "Men's Fleece Hoodie",
+        description: "Stretchy cotton-blend fleece brings superior comfort to a sweatshirt sporting a breathable mesh-lined hood and raglan sleeves that offer room to layer.",
+        image: "https://n.io.nordstrommedia.com/id/sr3/5788dc8d-eac4-4c3e-9958-5b9ad13ed41d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        imageIcon:"https://n.io.nordstrommedia.com/id/sr3/5788dc8d-eac4-4c3e-9958-5b9ad13ed41d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        quickImage: "https://n.io.nordstrommedia.com/id/sr3/9d6796c2-ea4a-41e5-b798-a38a51508d64.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        quickImageIcon:"https://n.io.nordstrommedia.com/id/sr3/9d6796c2-ea4a-41e5-b798-a38a51508d64.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        rawMaterialImage: "https://n.io.nordstrommedia.com/id/sr3/f15806cb-4d25-49ce-b1cd-2f7165becec6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        rawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/f15806cb-4d25-49ce-b1cd-2f7165becec6.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        videoIcon:"https://n.io.nordstrommedia.com/id/sr3/d8c2050e-59ab-4874-8ad7-5ee4a164de7e.jpeg",
+        price: "2781.95",
+        rating: "***",
+        raters: "(7)"        
     }
 
 ]
 
+
+if (JSON.parse(localStorage.getItem('clothes')) == null) {
+    localStorage.setItem('clothes',JSON.stringify(cloth))
+}
+
+let parent = document.getElementById('parent');
+
+let data = JSON.parse(localStorage.getItem('clothes'));
+
+data.forEach(function (element) {
+    let card = document.createElement('div');
+    card.setAttribute('class','card')
+    let imgcard = document.createElement('div');
+    imgcard.setAttribute('class','img-card')
+    let imgDiv = document.createElement('div');
+    imgDiv.setAttribute('class','img-div')
+    let img = document.createElement('img');
+   
+    img.src = element.image;
+    imgDiv.appendChild(img);
+    let quickDiv = document.createElement('div');
+    quickDiv.setAttribute('class','quick-Div')
+    imgcard.append(imgDiv,quickDiv)
+
+    let desCard = document.createElement('div');
+    desCard.setAttribute('class','des-card')
+
+    let colorSelector = document.createElement('div');
+    colorSelector.setAttribute('class','color-selector')
+    let blue = document.createElement('div')
+    blue.setAttribute('class','blue')
+    let black = document.createElement('div')
+    black.setAttribute('class','black')
+    let yellow = document.createElement('div')
+    yellow.setAttribute('class','yellow')
+    let voilet = document.createElement('div')
+    voilet.setAttribute('class','voilet')
+    colorSelector.append(blue, black, yellow, voilet);
+
+    let tagDiv = document.createElement('div');
+    tagDiv.setAttribute('class','tag-div')
+    let tag = document.createElement('p');
+    
+    tag.innerHTML = `${element.tag}`;
+    tagDiv.appendChild(tag);
+
+    let nameDiv = document.createElement('div');
+    nameDiv.setAttribute('class','name-div')
+    let name = document.createElement('p');
+    
+    name.innerHTML = `${element.brand} ${element.name}`
+    nameDiv.appendChild(name);
+
+    let priceDiv = document.createElement('div');
+    priceDiv.setAttribute('class','price-div')
+    let price = document.createElement('p');
+ 
+    price.innerHTML = `${element.price}`;
+    priceDiv.append(price);
+
+    let ratingDiv = document.createElement('div');
+    ratingDiv.setAttribute('class','rating-div')
+    let rating = document.createElement('p');
+    
+    rating.innerHTML = `${element.rating} (${element.raters})`;
+    ratingDiv.appendChild(rating);
+
+    desCard.append(colorSelector, tagDiv, nameDiv, priceDiv,ratingDiv);
+
+    card.append(imgcard, desCard);
+    parent.appendChild(card)
+})
