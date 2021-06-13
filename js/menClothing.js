@@ -121,7 +121,16 @@ data.forEach(function (element) {
     let imgcard = document.createElement('div');
     imgcard.setAttribute('class','img-card')
     let imgDiv = document.createElement('div');
-    imgDiv.setAttribute('class','img-div')
+    imgDiv.setAttribute('class', 'img-div');
+    imgDiv.onclick = function () {
+        let item = localStorage.getItem('item');
+        item = null;
+        localStorage.setItem('item',JSON.stringify(element))
+        
+        
+        window.location.href = "../html/item.html"
+        
+    }    
     let img = document.createElement('img');
    
     img.src = element.image;
