@@ -22,8 +22,12 @@ const cloth = [
         rawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/1fe9de9d-9571-4d3a-87bc-8383e736a4e7.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
         videoIcon:"https://n.io.nordstrommedia.com/id/sr3/2ca0416c-aade-455a-a7a9-2f02c4190c20.jpeg",
         price: "2514.76",
-        rating: "***",
-        raters: "135"        
+        rating: "4",
+        raters: "135",
+        sizeInfo: ['Classic rise.', 'True to size.', 'Order by your waist size; S=28-30", M=31-34", L=35-38", XL=40-42", XXL=43-45".'],
+        detail: "An easy, elasticized drawstring waistband tops comfortable sleep shorts cut from an ultrasoft pima-cotton blend.",
+        care: ['11" inseam; 22" leg opening; 13" front rise; 14" back rise (size Medium).','60% Pima cotton, 40% modal.','Machine wash cold, tumble dry low.','By Polo Ralph Lauren; imported.',"Men's Furnishings.",'Item #795807'],
+        brandDesc: 'New York City native Ralph Lauren began his career designing and selling ties, laying the foundation to start his own company in 1967. Now a fashion empire made up of a family of brands, Ralph Lauren represents a distinctive American perspective rooted in an aspirational lifestyle. Polo Ralph Lauren was launched in 1968, offering designs that are clean, timeless and ultrawearable.'
     },
     {
         category: "Shirts",
