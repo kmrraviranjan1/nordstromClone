@@ -63,3 +63,27 @@ let brandHead = document.getElementById('brand-head');
 brandHead.innerHTML = `<h2>${item.brand}</h2>`
 
 
+
+
+let raters = document.getElementById('raters');
+raters.innerHTML = `(${item.raters})`
+
+let name = document.getElementById('name');
+name.innerHTML = item.name;
+
+let brandName = document.getElementById('brand-name');
+brandName.innerHTML = item.brand
+
+let price = document.getElementById('price');
+price.innerHTML = `INR ${item.price}`;
+
+let discount = 25;
+let discountDiv = document.getElementById('discount');
+discountDiv.innerHTML = `${discount}% off`;
+
+let sp = document.getElementById('sprice');
+let sellP = discount / 100 * item.price;
+sp.innerHTML=`INR ${sellP}`
+
+
+
