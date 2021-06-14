@@ -8,6 +8,17 @@ body{
     font-size: 16px;
 }
 
+.empty-box{
+    height: 50px;
+}
+
+#container{
+    border: 1px solid red;
+    width: 96vw;
+    margin: auto;
+    
+}
+
 /* typography */
 
 
@@ -16,7 +27,7 @@ body{
 
 
 /* flex */
-#main-container{
+.flex{
     display: flex;
 }
 
@@ -36,3 +47,7 @@ body{
 
 
 /* aside */
+
+#aside ul {
+    list-style: none;
+}

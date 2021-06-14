@@ -56,6 +56,17 @@ for (let i = 0; i < info.length; i++){
     
 }
 
+let detailDisc = document.getElementById('detail-disc')
+detailDisc.innerHTML = item.description;
+
+let care = item.care;
+let careUl = document.getElementById('care-ul');
+for (let i = 0; i < care.length; i++){
+    let li = document.createElement('li');
+    li.innerHTML = care[i];
+    careUl.appendChild(li)
+}
+
 
 let brandDesc = document.getElementById('brand-desc');
 brandDesc.innerHTML=`<p> ${item.brandDesc}</p>`
@@ -87,3 +98,19 @@ sp.innerHTML=`INR ${sellP}`
 
 
 
+function addToBag(e) {
+    let bagTest = JSON.parse(localStorage.getItem('bag'));
+    
+    if (bagTest == null) {
+         let bag = [];
+    }
+    else {
+        let bag = JSON.parse(localStorage.getItem('bag'))
+    }
+    bag.push(item);
+    console.log('bag: ', bag);
+    localStorage.setItem('bag',JSON.stringify(bag))
+    
+
+    // window.location.href= "../html/shoppingBag.html"
+}
