@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="checkout.css"> -->
+    <link rel="stylesheet" href="../css/checkout.css">
+
+</head>
+
+<body>
+    <div>
+        <h1>nordstrom</h1>
+    </div>
+    <div class="checkout-layout">
+        <div class="input-layout">
+            <div class="text-area">
+                <h4>Secure Checkout powered by Borderfree</h4>
+                <p>Already have a Borderfree account? Click here.</p>
+                <h3>Delivery</h3>
+            </div>
+            <div id="inputs-layout">
+                <div class="emails"> <input class="input-boxa" type="text" id="email" placeholder="Email"></div>
+
+                <div class="inpu">
+                    <input class="input-box" type="text" id="first_name" placeholder="First Nmae">
+                    <input class="input-box" type="text" id="last_name" placeholder=" last Nmae">
+                </div>
+
+                <div id="address"> <input class="input-boxa" type="text" id="address_1" placeholder="Addreress"></div>
+                <div class="inpu">
+                    <input class="input-box" type="text" id="address_2" placeholder="Addreress 2  (optional)">
+                    <input class="input-box" type="text" id="postal_code" placeholder="Postal Code">
+                    <input class="input-box" type="text" id="city" placeholder="city">
+                    <input class="input-box" type="text" id="region" placeholder="Region (optional)">
+                    <input class="input-box" type="text" id="Phone" placeholder="Phone">
+                    <select class="selector" name="location" id="location">
+                        <option value="india">india</option>
+                        <option value="india">india</option>
+                        <option value="india">india</option>
+                        <option value="india">india</option>
+                        <option value="india">india</option>
+                        <option value="india">china</option>
+                        <option value="india">bhutan</option>
+                        <option value="india">nepal</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div id="price-layout">
+
+            <h3>Your Order</h3>
+            <Button onclick="usersAdd()" >Continue</Button>
+            <p id="items_price"> </p>
+            <p id="Shipping_fee"></p>
+            <p id="taxe"> </p>
+            <h3 id="total"></h3>
+
+            <p>Promo code</p>
+
+            <!-- <p id="items_price">Items ₹4,686 </p>
+            <p id="Shipping_fee">Shipping ₹2,683</p>
+            <p id="taxe"> Duties & Taxes UNPAID</p>
+            <p id="total">TOTAL (INR) ₹7,369</p> -->
+        </div>
+    </div>
+    <div class="selector-box">
+        <div class="header-selector">
+            <header>Delivery Method</header>
+            <header>Estimated Arrival</header>
+            <header>Shipping Cost</header>
+        </div>
+        <div class="header-selector">
+            <div>Standard No additional import charges at delivery</div>
+            <div>11–21 business days</div>
+            <div> (INR) ₹2,423</div>
+        </div>
+        <div class="header-selector">
+            <div>Standard No additional import charges at delivery</div>
+            <div>11–21 business days</div>
+            <div> (INR) ₹2,423</div>
+        </div>
+        <div class="header-selector">
+            <div>Standard No additional import charges at delivery</div>
+            <div>11–21 business days</div>
+            <div> (INR) ₹2,423</div>
+        </div>
+        <Button onclick="usersAdd()">Continue</Button>
+        <h2>(2)Payment </h2>
+    </div>
+    <div id="showaddress">
+
+    </div>
+</body>
+
+</html>
+<!-- <script src="checkout.js"></script> -->
+<script src="../js/checkout.js"></script>

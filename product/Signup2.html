@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="header.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="cartproduct.css">
+    <title>Document</title>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     </div>
     <nav>
         <div class="wrapper">
-            <div class="logo"> <a href="#">codingIndian</a></div>
+            <div class="logo"> <a href="#">Nordstrom</a></div>
             <ul class="nav-links">
                 <li><a href="#">Sale</a>
                     <div class="mega-box">
@@ -997,35 +998,89 @@
             </ul>
             <ul class="nav-links">
                 <li><a href="#"><i class="fas fa-search">Search</i></a></li>
-
                 <li><a href="#">SignIn</a>
                     <div class="mega-box-in">
                         <div class="content-in">
                             <div class="row-in">
                                 <ul class="mega-links-in">
                                     <li class="li-login"><a href="login.html">Log In</a></li>
-                                    <li class="li-login"><a href="Signup">Create Account</a></li>
+                                    <li class="li-login"><a href="Signup.html">Create Account</a></li>
                                     <li><a href="#">Your Account</a></li>
                                     <li><a href="#">Wish list</a></li>
                                     <li><a href="#">Looks</a></li>
                                     <li><a href="#">Stores & Event</a></li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
-
                 </li>
                 <li><a href="#"> <i class="fas fa-cart-arrow-down">cart</i></a></li>
             </ul>
         </div>
     </nav>
-    <div>
-        <img src="" alt="">
+    <div id="from-contant">
+        <div class="form-gap"></div>
+        <div class="signup-form2">
+            <h3> Create Account</h3>
+            <p><i class="fas fa-truck"></i>Check out faster</p>
+            <p> <i class="fas fa-truck"></i>Track orders easily</p>
+            <p> <i class="fas fa-truck"></i>One account to shop our brands</p>
+            <p>Required</p>
+            <p>Email</p>
+            <p id="displayemail"></p>
+
+            <label for="firstname">First Name</label>
+            <input type="text" id="fname" placeholder="Fisrt Name" required>
+            <label for="firstname">Last Name</label>
+            <input type="text" id="lname" placeholder="Last Name" required>
+            <label for="password">Create Password</label>
+            <input type="text" id="password" placeholder=" Create Password">
+            <p>By creating an account, you agree to our Privacy Policy and Terms & Conditions.</p>
+
+            <button onclick="createaccoun()"><a href="#">Create Account</a></button>
+
+        </div>
+        <div class="form-gap"></div>
     </div>
 
-
-
+    <!-- <button onclick="empetyinput()">empety input</button> -->
 </body>
 
 </html>
+<script src="signup2.js"></script>
+<!-- <script>
+
+
+    var userslist = localStorage.getItem("userslist") || []
+    userslist = JSON.parse(userslist)
+    function submit() {
+        var name = document.getElementById("name").value
+        var contact = document.getElementById("contact").value
+        var email = document.getElementById("email").value
+        var password = document.getElementById("password").value
+        if (name == "") {
+            alert("name is empety")
+        } else if (contact == "") {
+            alert("contact is empety")
+        } else if (email == "") {
+            alert("email is empety")
+        } else if (password == "") {
+            alert("password is empety")
+        } else {
+            function users(n, c, e, p) {
+                this.Name = n,
+                    this.Contact = c,
+                    this.Email = e,
+                    this.Password = p
+            }
+            var usersdata = new users(name, contact, email, password)
+            userslist.push(usersdata)
+            //    console.log(usersdata)
+            // console.log(userslist)
+            var usersjson = JSON.stringify(userslist)
+            localStorage.setItem("userslist", usersjson)
+
+        }
+
+    }
+</script> -->

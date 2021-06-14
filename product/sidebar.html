@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sidebar.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="showproduct.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     </div>
     <nav>
         <div class="wrapper">
-            <div class="logo"> <a href="#">codingIndian</a></div>
+            <div class="logo"> <a href="#"><h1> Nordstrom</h1></a></div>
             <ul class="nav-links">
                 <li><a href="#">Sale</a>
                     <div class="mega-box">
@@ -997,35 +998,40 @@
             </ul>
             <ul class="nav-links">
                 <li><a href="#"><i class="fas fa-search">Search</i></a></li>
-
                 <li><a href="#">SignIn</a>
-                    <div class="mega-box-in">
-                        <div class="content-in">
-                            <div class="row-in">
-                                <ul class="mega-links-in">
-                                    <li class="li-login"><a href="login.html">Log In</a></li>
-                                    <li class="li-login"><a href="Signup">Create Account</a></li>
-                                    <li><a href="#">Your Account</a></li>
-                                    <li><a href="#">Wish list</a></li>
-                                    <li><a href="#">Looks</a></li>
-                                    <li><a href="#">Stores & Event</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </li>
                 <li><a href="#"> <i class="fas fa-cart-arrow-down">cart</i></a></li>
             </ul>
         </div>
     </nav>
-    <div>
-        <img src="" alt="">
+
+    <button onclick="Sortlow()">Sort By Low To High</button>
+    <button onclick="Sorthigh()">Sort By High To Low</button>
+    <button onclick="window.location.href='cartproduct.html'">Show cart Product</button>
+
+
+    <div id="all-element-display">
+        <div id="divsidebar">
+            <header class="headersidebar">sidebar header</header>
+            <ul id="ulsidebar">
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+                <li class="lisidebar"><a href="#"> sidebar<i class="fas fa-plus"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="display">
+
+        </div>
     </div>
-
-
-
 </body>
 
 </html>
+<script src="showproduct.js"></script>

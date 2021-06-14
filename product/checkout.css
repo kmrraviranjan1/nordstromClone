@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.checkout-layout{
+    display: grid;
+    grid-template-columns:70% 20%;
+   gap:1%;
+}
+.input-layout{
+    width:96%;
+    border:1px solid black;
+    gap: 1%px;
+ 
+}
+#inputs-layout {
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    gap: 20px;
+}
+.input-boxa{
+    width: 1000px;
+    height: 35px;
+}
+.inpu {
+  
+display: grid;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto ;
+  
+    gap: 20px;
+}
+.input-box{
+    width: 490px;
+    height: 35px;
+}
