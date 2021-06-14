@@ -18,6 +18,15 @@ img{
     width: 2rem;
 }
 
+.full{
+    width: 100%;
+    
+}
+
+.padOne{
+    padding: 1rem;
+}
+
 /* flex */
 .flex{
     display: flex;
@@ -30,7 +39,7 @@ img{
     width: calc(100%-60px);
     height: 40vw;
     overflow: hidden;
-    border: 2px dashed;
+   
    
     margin: 1rem auto;
 }
@@ -41,7 +50,7 @@ img{
 }
 #display{
     width: calc(100%-900px);
-    border: 1px solid red;
+    
 }
 #purchase{
     width: 900px;
