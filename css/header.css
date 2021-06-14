@@ -16,7 +16,7 @@ padding-top: 5px;
 .top-p a{
     color: white;
 }
-nav{
+.navsec{
     background-color: white;
     /* position: fixed; */
     width: 100%;
@@ -24,7 +24,7 @@ nav{
     height: 60px;
     line-height: 65px;
 }
-nav .wrapper{
+.navsec .wrapper{
 max-width: 1200px;
 padding: 0 30px;
 margin: auto;

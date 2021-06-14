@@ -10,14 +10,14 @@ function addemail() {
     } else {
         var res = false
         for (var i = 0; i < users_login_data.length; i++) {
-            if (users_login_data[i].email == email && users_login_data[i].name == name) {
+            if (users_login_data[i].email == email) {
                 res = true
             }
         }
 
         // console.log(res)
         if (res == true) {
-            window.location.href = "Signup4.html"
+            window.location.href = "login.html"
         } else {
             function users(e) {
                 this.Email = e
