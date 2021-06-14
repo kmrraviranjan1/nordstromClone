@@ -154,3 +154,19 @@ img{
 #shopping-idea div{
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* ------navigation ul li a ---------------- */
+.flex-spc-bwn li{
+    margin-right: 55%;
+    list-style: none;
+    height: 100%;
+    
+    border: 1px solid;
+}
