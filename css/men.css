@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    font-size: 16px;
+}
+
+.empty-box{
+    height: 50px;
+}
+
+#container{
+    border: 1px solid red;
+    width: 96vw;
+    margin: auto;
+    
+}
+
+/* typography */
+
+
+/* image */
+
+
+
+/* flex */
+.flex{
+    display: flex;
+}
+
+#aside{
+    width: 15%;
+}
+#main{
+    width: 85%;
+}
+
+/* grid */
+
+.six-two{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+/* aside */
+
+#aside ul {
+    list-style: none;
+}
