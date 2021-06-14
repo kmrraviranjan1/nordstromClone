@@ -99,18 +99,19 @@ sp.innerHTML=`INR ${sellP}`
 
 
 function addToBag(e) {
-    let bagTest = JSON.parse(localStorage.getItem('bag'));
+    let bag;
+    bag = localStorage.getItem('bag')
     
-    if (bagTest == null) {
-         let bag = [];
+    if (bag == null) {
+        bag = [];
     }
     else {
-        let bag = JSON.parse(localStorage.getItem('bag'))
+        bag = JSON.parse(localStorage.getItem('bag'))
     }
     bag.push(item);
     console.log('bag: ', bag);
     localStorage.setItem('bag',JSON.stringify(bag))
     
 
-    // window.location.href= "../html/shoppingBag.html"
+    window.location.href= "../html/shoppingBag.html"
 }
