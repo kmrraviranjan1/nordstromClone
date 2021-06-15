@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+.cntr{
+    text-align: center;
+}
+.white{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+
+.lho{
+    line-height: 1.5rem;
+}
+.lht{
+    line-height: 2rem;
+}
+
+
+/* anchor desiginings */
+
+.wha{
+    color: white;
+}
+
+/* index page */
+
+#shopping-idea div{
+    text-align: center;
+}

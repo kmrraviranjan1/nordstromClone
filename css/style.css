@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+::selection{
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+.empty-div{
+    height: 2rem;
+}
+
+.body-cont{
+    width: 98vw;
+    margin: 1rem auto;
+    padding: 1rem;
+    border: 1px solid red;
+}
+
+.bgb{
+    background-color: black;
+}
+
+
+
+.f{
+    width: 100%;    
+}
+
+.ef{
+    width: 85%;
+}
+.ez{
+    width: 80%;
+}
+.sf{
+    width: 75%;
+    
+}
+.ssz{
+    width: 70%;
+}
+.sz{
+    width: 60%;
+}
+.fz{
+    width: 40%;
+}
+.thz{
+    width: 30%;
+}
+.tz{
+    width: 20%;
+}
+
+.of{
+    width: 15%;
+}
+
+.hf{
+    height: 100%;
+}
+
+.b{
+    border: 1px solid red;    
+    
+}
+
+.padOne{
+    padding: 1rem;
+}
+.mbOne{
+    margin-bottom: 1rem;
+}
+.mtOne{
+    margin-top: 1rem;
+}
+.mtbOne{
+    margin: 1rem 0 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- */
+
+/* image */
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+#shopping-idea img{
+    border-radius: 50%;
+}
+
+/* item.html */
+#aside-img-parent{
+    width: 60px;
+}
+#main-img-parent{
+    width: calc(100%-60px);
+    height: 40vw;
+    overflow: hidden;
+   
+   
+    margin: 1rem auto;
+}
+#main-img-parent img{
+    width: 600px;
+   
+}
+#main-img-parent img:hover{
+    width: 800px;
+    cursor: crosshair;
+   
+}
+
+.icon{
+    width: 2rem;
+}
+/* item.html image ends */
+
+/* hover */
+.hbb:hover{
+    border-bottom: 4px solid rgb(56, 25, 25);
+    
+}
+
+.hb:hover{
+    border: 1px solid black;
+}
+
+
+
+
+
+/* ----------------------------- */
+/* ul and li styling */
+ul{
+    list-style: none;    
+}
+.uld{
+    list-style: disc ;
+    margin: 1rem;
+}
+
+
+
+
+
+/* --card---- */
+.card{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid;
+}
+
+
+/* buttons */
+
+.btn{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    
+    background-color: black;
+}
+.csbtn{
+    padding: 0.5rem;
+    border: 1px solid rgb(206, 165, 165);
+    border-radius: 50%;   
+    margin-right: 1rem; 
+}
+
+/* -------hover--- */
+.csbtn:hover{    
+    border: 1px solid rgb(26, 16, 16);    
+}
+.hp:hover{
+    cursor: pointer;
+}
