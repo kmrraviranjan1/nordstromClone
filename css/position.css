@@ -58,6 +58,9 @@
     left: 38%;
 }
 
+/* box 19 anniversary sale */
+
+
 /* box 21 see what new */
 #what-new-txt-div{
     top:30%;
@@ -69,17 +72,43 @@
     top: 35%;
     left: 65%;
 }
+/* box 27 shop by category */
+#index-category-name{
+    left: 0;
+    top: 80%;
+}
 
 /* box 29  nordstrom trunk club*/
 
 
 #trunk-club-txt1-div{
-    top:44%;
-    left:3% ;
+    top:42%;
+    left:7% ;
+    width: 28%;
 }
 #trunk-club-txt2-div{
-    top:10%;
-    left: 30%;
+    top:30%;
+    right: 3%;
+    width: 35%;
+}
+
+/* box-33 need help */
+#need-help-txt-div{
+    top: 30%;
+}
+
+#need-help-txt1-div{
+    
+    margin-left: 20%;
+    
+}
+#need-help-txt2-div{
+    
+    margin-left: 50%;
+}
+#need-help-txt3-div{
+   
+    margin-left: 50%;
 }
 
 /* box-35 stay in  touch */
@@ -88,6 +117,25 @@
     left: 10%;
 }
 
+
+/* ---men.html-- */
+#surfing-summer-txt-div{
+    width: 30%;
+    top: 10%;
+    left: 5%;
+}
+#surfing-summer-txt-div a{
+    display: block;
+   
+}
+#fearofgod-txt-div{
+    top: 35%;
+    width: 30%;
+    left: 10%;
+}
+#fearofgod-txt-div a{
+    display: block;
+}
 
 
 

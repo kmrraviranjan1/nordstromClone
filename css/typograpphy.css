@@ -2,10 +2,16 @@
 .cntr{
     text-align: center;
 }
+*{
+    font-family: 'Roboto', sans-serif;
+
+}
 .white{
     color: white;
-    font-family: 'Roboto', sans-serif;
     
+}
+.black{
+    color: black;
 }
 
 

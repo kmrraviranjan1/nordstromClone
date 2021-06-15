@@ -19,6 +19,9 @@ body{
 .empty-div{
     height: 2rem;
 }
+.empty-box{
+    height: 3rem;
+}
 
 .body-cont{
     width: 96vw;
@@ -99,7 +102,18 @@ body{
 .mtbOne{
     margin: 1rem 0 1rem 0;
 }
+.mlOne{
+    margin-left: 1rem;
+}
+.mrOne{
+    margin-right: 1rem;
+}
+.mrff{
+    margin-right: 55%;
+}
 
+
+/* ---visiblity-- */
 .filters{
     display: none;
 }
