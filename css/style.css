@@ -21,17 +21,21 @@ body{
 }
 
 .body-cont{
-    width: 98vw;
+    width: 96vw;
     margin: 1rem auto;
     padding: 1rem;
     border: 1px solid red;
+
 }
+
+
+/* ---color--- */
 
 .bgb{
     background-color: black;
 }
 
-
+/* --width---- */
 
 .f{
     width: 100%;    
@@ -71,10 +75,17 @@ body{
     height: 100%;
 }
 
+
+
 .b{
     border: 1px solid red;    
     
 }
+.bb{
+    border-bottom: 1px solid;
+}
+
+
 
 .padOne{
     padding: 1rem;
@@ -88,6 +99,12 @@ body{
 .mtbOne{
     margin: 1rem 0 1rem 0;
 }
+
+.filters{
+    display: none;
+}
+
+
 
 
 
@@ -140,15 +157,10 @@ img{
 }
 /* item.html image ends */
 
-/* hover */
-.hbb:hover{
-    border-bottom: 4px solid rgb(56, 25, 25);
-    
-}
 
-.hb:hover{
-    border: 1px solid black;
-}
+
+
+
 
 
 
@@ -185,6 +197,14 @@ ul{
     
     background-color: black;
 }
+.sbtn{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    
+    background-color: black;
+}
+
 .csbtn{
     padding: 0.5rem;
     border: 1px solid rgb(206, 165, 165);
@@ -192,7 +212,16 @@ ul{
     margin-right: 1rem; 
 }
 
+
 /* -------hover--- */
+.hbb:hover{
+    border-bottom: 4px solid rgb(56, 25, 25);
+    
+}
+
+.hb:hover{
+    border: 1px solid black;
+}
 .csbtn:hover{    
     border: 1px solid rgb(26, 16, 16);    
 }

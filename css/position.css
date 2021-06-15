@@ -87,3 +87,20 @@
     top: 10%;
     left: 10%;
 }
+
+
+
+
+
+/* ---sidebar---- */
+.side-nav{
+    
+    height: 90vh;
+    position: fixed;
+    
+    width: 14%;
+    left: 1%;
+    bottom: 1vw;
+    overflow-y: scroll;
+   
+}
