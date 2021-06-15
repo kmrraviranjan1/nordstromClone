@@ -16,7 +16,7 @@ function appendItem(data) {
         let card = document.createElement('div');
         card.setAttribute('class','card')
         let imgcard = document.createElement('div');
-        imgcard.setAttribute('class','img-card')
+        imgcard.setAttribute('class','img-card hp')
         let imgDiv = document.createElement('div');
         imgDiv.setAttribute('class', 'img-div');
         imgDiv.onclick = function () {
@@ -35,21 +35,40 @@ function appendItem(data) {
         let quickDiv = document.createElement('div');
         quickDiv.setAttribute('class','quick-Div')
         imgcard.append(imgDiv,quickDiv)
+        img.onmouseenter = function () {
+            img.src = element.quickImage;
+        }
+        img.onmouseleave = function () {
+            img.src = element.image;
+        }
 
         let desCard = document.createElement('div');
         desCard.setAttribute('class','des-card')
         
         let colorSelector = document.createElement('div');
-        colorSelector.setAttribute('class','color-selector')
-        let blue = document.createElement('div')
-        blue.setAttribute('class','blue')
-        let black = document.createElement('div')
-        black.setAttribute('class','black')
-        let yellow = document.createElement('div')
-        yellow.setAttribute('class','yellow')
-        let voilet = document.createElement('div')
-        voilet.setAttribute('class','voilet')
-        colorSelector.append(blue, black, yellow, voilet);
+        colorSelector.setAttribute('class', 'color-selector flex mrOne')
+
+        let pcsDiv = document.createElement('div')
+        pcsDiv.setAttribute('class','csbtn hp')
+        let pcs = document.createElement('div');
+        pcs.onclick= function (){
+            img.src = element.image;
+        }
+        pcs.setAttribute('class', 'mbtn');
+        pcs.style.backgroundColor = element.pcolor;
+        pcsDiv.appendChild(pcs)
+
+        let scsDiv = document.createElement('div')
+        scsDiv.setAttribute('class','csbtn hp')
+        let scs = document.createElement('div')
+        scs.onclick= function (){
+            img.src = element.cimage;
+        }
+        scs.setAttribute('class','mbtn')
+        scs.style.backgroundColor = element.scolor;
+        scsDiv.appendChild(scs)
+        
+        colorSelector.append(pcsDiv,scsDiv);
         
         let tagDiv = document.createElement('div');
         tagDiv.setAttribute('class','tag-div')
@@ -76,10 +95,10 @@ function appendItem(data) {
         ratingDiv.setAttribute('class','rating-div')
         let rating = document.createElement('p');
         let actualRate = Number(element.rating);
-        console.log('actualRate: ', actualRate);
+        
         let ratingString = "";
         for (let i = 0; i < actualRate; i++){
-            ratingString= ratingString+"*"
+            ratingString= ratingString+"*"+" "
         }
         
         rating.innerHTML = `${ratingString} (${element.raters})`;
