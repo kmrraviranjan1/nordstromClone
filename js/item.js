@@ -5,44 +5,53 @@ title.innerHTML = item.name;
 
 
 let iconParent = document.getElementById('icon-parent');
+let mainImage = document.getElementById('main-img');
 
+
+appendItem(item.image,item.imageIcon,item.quickImage,item.quickImageIcon,item.videoIcon,item.rawMaterialImage,item.rawMaterialImageIcon)
+
+function appendItem(i,ii,q,qi,vi,r,ri) {
+    
 let imageIcon = document.getElementById('img-icon')
 imageIcon.onclick = function () {
-    console.log(55)
-    mainImg.src = item.image
+    
+    mainImg.src = i
     
 }
 imageIconImg = document.createElement('img');
-imageIconImg.src = item.imageIcon
+imageIconImg.src = ii;
 imageIcon.appendChild(imageIconImg)
 
 let quickImageIcon = document.getElementById('quick-img-icon')
 quickImageIcon.onclick=function(){
-    mainImg.src=item.quickImage
-}
+    mainImg.src = q;
+    }
+    
 quickImageIconImg = document.createElement('img');
-quickImageIconImg.src = item.quickImageIcon
+    quickImageIconImg.src = qi;
 quickImageIcon.appendChild(quickImageIconImg)
 
 let videoIcon = document.getElementById('video-icon')
 
 videoIconImg = document.createElement('img');
-videoIconImg.src = item.videoIcon
+    videoIconImg.src = vi;
 videoIcon.appendChild(videoIconImg)
 
 let rawMaterialImageIcon = document.getElementById('raw-icon')
 rawMaterialImageIcon.onclick=function(){
-    mainImg.src= item.rawMaterialImage
+    mainImg.src = r;
 }
 rawMaterialImageIconImg = document.createElement('img');
-rawMaterialImageIconImg.src = item.rawMaterialImageIcon
+    rawMaterialImageIconImg.src = ri;
 rawMaterialImageIcon.appendChild(rawMaterialImageIconImg)
 
-let mainImage = document.getElementById('main-img');
+
 let mainImg = document.createElement('img');
-mainImg.src = item.image;
+mainImg.src = i;
 mainImage.appendChild(mainImg)
 
+
+}
 
 
 let sizeInform = document.getElementById('size-inform');
@@ -114,4 +123,42 @@ function addToBag(e) {
     
 
     window.location.href= "../html/shoppingBag.html"
+}
+
+let cTwo = document.getElementById('c2');
+cTwo.style.backgroundColor = item.scolor;
+
+cTwo.onclick = function () {
+    let imageIcon = document.getElementById('img-icon')
+    imageIcon.innerHTML = null;
+    let quickImageIcon = document.getElementById('quick-img-icon')
+    quickImageIcon.innerHTML = null;
+    let videoIcon = document.getElementById('video-icon')
+    videoIcon.innerHTML = null;
+    let rawMaterialImageIcon = document.getElementById('raw-icon')
+    rawMaterialImageIcon.innerHTML = null;
+    
+    mainImage.innerHTML = null;
+    appendItem(item.cimage,item.cimageIcon,item.cquickImage,item.cquickImageIcon,item.videoIcon,item.crawMaterialImage,item.crawMaterialImageIcon)
+    
+}
+
+
+let cOne = document.getElementById('c1');
+cOne.style.backgroundColor = item.pcolor;
+
+cOne.onclick = function () {
+    let imageIcon = document.getElementById('img-icon')
+    imageIcon.innerHTML = null;
+    let quickImageIcon = document.getElementById('quick-img-icon')
+    quickImageIcon.innerHTML = null;
+    let videoIcon = document.getElementById('video-icon')
+    videoIcon.innerHTML = null;
+    let rawMaterialImageIcon = document.getElementById('raw-icon')
+    rawMaterialImageIcon.innerHTML = null;
+    
+    mainImage.innerHTML = null;
+
+    appendItem(item.image,item.imageIcon,item.quickImage,item.quickImageIcon,item.videoIcon,item.rawMaterialImage,item.rawMaterialImageIcon)
+
 }
