@@ -6,7 +6,11 @@
 .psn-absolute{
     position: absolute;
 }
-
+.psn-sticky{
+    position: sticky;
+    top: 0;
+    
+}
 
 
 /* index page */

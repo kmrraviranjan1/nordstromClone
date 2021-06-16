@@ -175,3 +175,82 @@ sort.onclick = function () {
 
 let itemavailableP = document.getElementById('item-available');
 itemavailableP.innerHTML = `${itemavailable} items`;
+
+// sidebar filters visible
+
+let addPlus = document.getElementsByClassName('add-sign');
+for (let i = 0; i < addPlus.length; i++){
+    // addPlus[i].parentElement.parentElement.nextElementSibling.style.display="block"
+    addPlus[i].onclick = function () {
+        addPlus[i].parentElement.parentElement.nextElementSibling.style.display = "block"
+        // console.log('addPlus[i]: ', addPlus[i]);
+        // addPlus[i].after.style.content= '002D'
+        
+            // window.onclick = function(event) {
+            // if (event.target == addPlus[i]) {
+            //     addPlus[i].parentElement.parentElement.nextElementSibling.style.display = "none"
+            // }
+            // }
+    }
+    
+}
+
+// side bar filtering
+
+let activwear = document.getElementById('activewear');
+
+activwear.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.category=="Activewear"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+let shirt = document.getElementById('shirt');
+
+shirt.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.category=="Shirts"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+let suit = document.getElementById('suit');
+
+suit.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.category=="Suits & Separates"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+let hoodie = document.getElementById('hoodie');
+
+hoodie.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.category=="Sweatshirts & Hoodies"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+
