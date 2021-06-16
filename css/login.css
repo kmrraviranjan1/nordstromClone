@@ -5,18 +5,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    /* border: 1px solid black; */
+    
 }
 #from-contant{
     display: grid;
     grid-template-columns:35% 30% 30%; 
-    /* border: 1px solid black; */
+    
     
 }
-.signup-form{
+.signup-form2{
    display:flex;
    flex-direction: column;
   margin-top: 100px;
     gap: 20px;
    
+}
+.signup-form2 .inputbtn{
+    width: 300px;
+    height: 30px;
+}
+.inputbtn>a{
+    text-decoration: none;
 }

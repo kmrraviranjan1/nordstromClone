@@ -13,10 +13,10 @@ function sign_in() {
     var password = document.getElementById("password").value
     users_login_data.forEach(function (el) {
         if (el.Email == current_email && el.password == password) {
-            window.location.href = "showproduct.html"
-        }else{
+            window.location.href = "index.html"
+        } else {
             alert("please type correct email or password")
         }
     })
-    
+
 }

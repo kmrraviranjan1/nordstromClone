@@ -10,7 +10,7 @@ function addemail() {
     } else {
         var res = false
         for (var i = 0; i < users_login_data.length; i++) {
-            if (users_login_data[i].email == email) {
+            if (users_login_data[i].Email == email) {
                 res = true
             }
         }

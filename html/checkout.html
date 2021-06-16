@@ -49,51 +49,99 @@
                     </select>
                 </div>
             </div>
+
+            <div class="selector-box">
+                <div class="header-selector">
+                    <header>Delivery Method</header>
+                    <header>Estimated Arrival</header>
+                    <header>Shipping Cost</header>
+                </div>
+                <div class="header-selector">
+                    <div>Standard No additional import charges at delivery</div>
+                    <div>11–21 business days</div>
+                    <div> (INR) ₹2,423</div>
+                </div>
+                <div class="header-selector">
+                    <div>Standard No additional import charges at delivery</div>
+                    <div>11–21 business days</div>
+                    <div> (INR) ₹2,423</div>
+                </div>
+                <div class="header-selector">
+                    <div>Standard No additional import charges at delivery</div>
+                    <div>11–21 business days</div>
+                    <div> (INR) ₹2,423</div>
+                </div>
+
+            </div>
+            <div class="paymentsec">
+                <Button onclick="usersAdd()">Continue</Button>
+                <h2>(2)Payment </h2>
+            </div>
+            <div class="address">
+                <div id="showaddress">
+
+                </div>
+                <div class="radiobutton">
+                    <div>Standard No additional import charges at delivery</div>
+                    <div>11–21 business days</div>
+                    <div> (INR) ₹2,423</div>
+                </div>
+            </div>
+            <div class="formsec">
+                <p>payment details</p>
+                <form id="form">
+                    <input type="checkbox" id="address" name="address" value="address">
+                    <label for="address"> My Billig address is the same as my delivery address</label><br>
+                    <div class="cardsec">
+
+                        <input type="checkbox" id="card" name="cardname" value="card">
+                        <label for="card"> Credit Or Debit Card </label><br>
+                        <input type="number" id="cardnum" placeholder="Card Number 0000 0000 0000 0000">
+                        <input type="number" id="exp" placeholder="MM/YY 0000">
+                        <input type="number" id="secode" placeholder="Security Code 000"><br>
+                    </div>
+
+
+                    <input type="checkbox" id="sendBill" name="sendBill" value="bill">
+                    <label for="sendBill">Send me electronic or mail offers from Borderfree. You may opt out at any time
+                    </label><br>
+
+                    <input type="checkbox" id="sendalert" name="sendalert" value="sendalert">
+                    <label for="sendalert">Send me electronic or mail offers from nordstrom. You may opt out at any time
+                    </label><br>
+
+
+                </form>
+                <button onclick="getcard()">place Order</button>
+                <!-- <input onclick="" type="submit" value="place Order"> -->
+            </div>
+
+
         </div>
         <div id="price-layout">
+            <div class="total-price">
 
-            <h3>Your Order</h3>
-            <Button onclick="usersAdd()" >Continue</Button>
-            <p id="items_price"> </p>
-            <p id="Shipping_fee"></p>
-            <p id="taxe"> </p>
-            <h3 id="total"></h3>
+                <h3>Your Order</h3>
+                <Button onclick="usersAdd()">Continue</Button>
+                <p id="items_price"> </p>
+                <p id="Shipping_fee"></p>
+                <p id="taxe"> </p>
+                <p>Promo code</p>
+                <p id="total"></p>
 
-            <p>Promo code</p>
+            </div>
 
-            <!-- <p id="items_price">Items ₹4,686 </p>
-            <p id="Shipping_fee">Shipping ₹2,683</p>
-            <p id="taxe"> Duties & Taxes UNPAID</p>
-            <p id="total">TOTAL (INR) ₹7,369</p> -->
+            <div id="bagshow">
+
+            </div>
+        </div>
+        <div id="masg">
+
         </div>
     </div>
-    <div class="selector-box">
-        <div class="header-selector">
-            <header>Delivery Method</header>
-            <header>Estimated Arrival</header>
-            <header>Shipping Cost</header>
-        </div>
-        <div class="header-selector">
-            <div>Standard No additional import charges at delivery</div>
-            <div>11–21 business days</div>
-            <div> (INR) ₹2,423</div>
-        </div>
-        <div class="header-selector">
-            <div>Standard No additional import charges at delivery</div>
-            <div>11–21 business days</div>
-            <div> (INR) ₹2,423</div>
-        </div>
-        <div class="header-selector">
-            <div>Standard No additional import charges at delivery</div>
-            <div>11–21 business days</div>
-            <div> (INR) ₹2,423</div>
-        </div>
-        <Button onclick="usersAdd()">Continue</Button>
-        <h2>(2)Payment </h2>
-    </div>
-    <div id="showaddress">
 
-    </div>
+
+
 </body>
 
 </html>

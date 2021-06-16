@@ -12,14 +12,12 @@ displayemail()
 
 function login() {
     var password = document.getElementById("password").value
-   
-    if (a) {
-        alert("fill all the input ")
-    } else {
-       
-       
-        // window.location.href = "Signup3.html"
-    }
-     localStorage.setItem("users_login_data", JSON.stringify(users_login_data))
-
+    users_login_data.forEach(function (el) {
+        // console.log(el.password)
+        if (el.password == password) {
+            window.location.href = "../index.html"
+            
+        }
+    })
 }
+login()
