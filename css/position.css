@@ -148,9 +148,10 @@
 .side-nav{
     
     height: 90vh;
-    position: fixed;
+    position: sticky;
+    top: 0;
     
-    width: 14%;
+    /* width: 14%; */
     left: 1%;
     bottom: 1vw;
     overflow-y: scroll;

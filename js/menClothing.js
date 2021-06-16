@@ -253,4 +253,46 @@ hoodie.onclick = function () {
     appendItem(filteredclothes)
 }
 
+let cotton = document.getElementById('cotton');
+
+cotton.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.material=="100% cotton"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+let linen = document.getElementById('linen');
+
+linen.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.material=="100% Linen"
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
+let denim = document.getElementById('denim');
+
+denim.onclick = function () {
+    let filteredItems = JSON.parse(localStorage.getItem('clothes'))
+    
+    
+    let filteredclothes = filteredItems.filter(function (cloth) {
+        return cloth.material == "Denim";
+    })
+    
+    parent.innerHTML = null;
+    appendItem(filteredclothes)
+}
+
 

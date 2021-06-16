@@ -40,7 +40,7 @@ const cloth = [
         subCategory: "Dress-Shirts",
         brand: "NORDSTROM",
         gender: "men",
-        material: "100% Linen",
+        material: "Denim",
         tag: "new",
         sale: "regular",
         fit: "true to size",
@@ -152,4 +152,3 @@ if (JSON.parse(localStorage.getItem('clothes')) == null) {
 }
 
 
-// localStorage.clear()
