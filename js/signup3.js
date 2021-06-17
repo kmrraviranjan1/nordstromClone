@@ -28,7 +28,7 @@ function laststep() {
         }
         // window.location.href = "showproduct.html"
     })
-    window.location.href = "showproduct.html"
+    window.location.href = "menClothing.html"
 
     localStorage.setItem("users_login_data", JSON.stringify(users_login_data))
 }
