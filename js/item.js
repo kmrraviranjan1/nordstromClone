@@ -95,14 +95,14 @@ let brandName = document.getElementById('brand-name');
 brandName.innerHTML = item.brand
 
 let price = document.getElementById('price');
-price.innerHTML = `INR ${item.price}`;
+price.innerHTML = `INR ${item.price * 80}`;
 
 let discount = 25;
 let discountDiv = document.getElementById('discount');
 discountDiv.innerHTML = `${discount}% off`;
 
 let sp = document.getElementById('sprice');
-let sellP = discount / 100 * item.price;
+let sellP = (100 - discount) / 100 * (item.price * 80);
 sp.innerHTML=`INR ${sellP}`
 
 
@@ -117,6 +117,7 @@ function addToBag(e) {
     else {
         bag = JSON.parse(localStorage.getItem('bag'))
     }
+    
     bag.push(item);
     console.log('bag: ', bag);
     localStorage.setItem('bag',JSON.stringify(bag))
@@ -161,4 +162,22 @@ cOne.onclick = function () {
 
     appendItem(item.image,item.imageIcon,item.quickImage,item.quickImageIcon,item.videoIcon,item.rawMaterialImage,item.rawMaterialImageIcon)
 
+}
+
+
+let quant = document.getElementById('quant');
+let myQuant = 1;
+quant.innerHTML = myQuant;
+
+function incquant() {
+    myQuant++;
+    quant.innerHTML = myQuant;
+}
+
+function decquant() {
+    myQuant--;
+    if (myQuant < 1) {
+        myQuant = 1;
+    }
+    quant.innerHTML = myQuant;
 }

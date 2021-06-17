@@ -3,11 +3,11 @@ let bag = JSON.parse(localStorage.getItem('bag'));
 let parent = document.getElementById('parent');
 
 let total = 0;
-
+let id = 0;
 
 bag.forEach(function(element) {
     let card = document.createElement('div');
-    card.setAttribute('class','card flex')
+    card.setAttribute('class','card flex fjsb')
     let imgDiv = document.createElement('div');
     let img = document.createElement('img');
     img.src = element.imageIcon;
@@ -25,21 +25,105 @@ bag.forEach(function(element) {
 
     let buttonDiv = document.createElement('div')
     let removeButton = document.createElement('button')
+    removeButton.setAttribute('class', 'mrOne')
+    id++;
+    
+    removeButton.onclick = function () {
+       let target = event.target
+        let curParent = target.parentElement.parentElement.parentElement;
+        // alert('Item saved in your wish list, Login to see items in the wish list')
+        
+        curParent.remove()
+        let price = target.parentElement.parentElement.parentElement.childNodes[3].childNodes[0].textContent
+        let newPrice = Number(price.split('$')[1])
+        total = total - newPrice;
+        totalDiv.innerHTML = `$${total}`
+        
+        
+        
+        if (total <= 0) {
+            alert('Your cart is empty')
+            alert('redirecting to shopping page')
+            window.location.href='menClothing.html'
+        }
+       
+    }
+    
+    
+    
     removeButton.textContent='Remove'
     let saveButton = document.createElement('button');
+    saveButton.onclick = function () {
+        
+       let target = event.target
+        let curParent = target.parentElement.parentElement.parentElement;
+        alert('Item saved in your wish list, Login to see items in the wish list')
+        
+        let price = target.parentElement.parentElement.parentElement.childNodes[3].childNodes[0].textContent
+        let newPrice = Number(price.split('$')[1])
+        total = total - newPrice;
+        totalDiv.innerHTML = `$${total}`
+        if (total <= 0) {
+            alert('Your cart is empty Please login to see your cart items')
+            window.location.href='login.html'
+        }
+        curParent.remove()
+    }
     saveButton.textContent = 'Save for later'
     buttonDiv.append(removeButton, saveButton);
     descDiv.append(nameDiv,insDiv,staticDiv,buttonDiv)
 
 
     let qtyDiv = document.createElement('div');
+    qtyDiv.setAttribute('class','flex')
+    let incDiv = document.createElement('div');
+    incDiv.onclick = function () {
+        curQuant++;
+        quanP.innerHTML = curQuant;
+        priceP.innerHTML = `$${price * curQuant}`
+        total = total + (Number(price));
+        totalDiv.innerHTML = `$${total}`
+        
+    }
+    let incbut = document.createElement('button');
+    incbut.setAttribute('class','padOne')
+    incbut.textContent="+"
+    incDiv.appendChild(incbut)
+    let qunDiv = document.createElement('div');
+    qunDiv.setAttribute('class','padOne')
+    let quanP = document.createElement('p');
+    qunDiv.appendChild(quanP)
+    let curQuant = 1;
+    quanP.innerHTML=curQuant
+    let decDiv = document.createElement('div');
+    decDiv.onclick = function () {
+        curQuant--;
+        if (curQuant > 0) {
+            total = total - Number(price);
+            
+        }
+        if (curQuant < 1) {
+            curQuant = 1;
+        }
+        quanP.innerHTML = curQuant;
+        priceP.innerHTML = `$${price * curQuant}`
+        totalDiv.innerHTML = `$${total}`
+        
+    }
+    let decbut = document.createElement('button');
+    decbut.setAttribute('class','padOne')
+    decbut.textContent="-"
+    decDiv.appendChild(decbut)
+    qtyDiv.append(incDiv,qunDiv,decDiv)
+    
 
 
     let priceDiv = document.createElement('div');
     let priceP = document.createElement('p');
-    let price = element.price/80;
-    total = total + price;
-    priceP.innerHTML = `$${price}`
+    let price = element.price;
+    total = total + Number(price)
+    priceP.innerHTML = `$${price*curQuant}`
+    
     priceDiv.appendChild(priceP)
 
     card.append(imgDiv,descDiv,qtyDiv,priceDiv)
@@ -49,3 +133,4 @@ bag.forEach(function(element) {
 
 let totalDiv = document.getElementById('total-div');
 totalDiv.innerHTML = `$${total}`
+
