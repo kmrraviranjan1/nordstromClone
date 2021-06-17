@@ -151,3 +151,10 @@ height: auto;
     width: 250px;
     height: 30px;
 }
+#masg{
+    width: 800px;
+    height: 100px;
+    background-color: wheat;
+    padding: 2rem;
+    font-size: 2rem;
+}
