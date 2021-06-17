@@ -4,6 +4,7 @@ var current_email = JSON.parse(localStorage.getItem("current_email"))
 
 function displayemail() {
     var displayemail = document.getElementById("displayemail")
+    displayemail.innerHTML=null
     // var p = document.createElement("p")
     // p.textContent = `Email: ${current_email}`
     displayemail.append(current_email)
