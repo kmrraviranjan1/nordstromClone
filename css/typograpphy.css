@@ -53,3 +53,19 @@
 #shopping-idea div{
     text-align: center;
 }
+
+
+/* main logo */
+.main-logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-left: 1rem;
+    
+    
+}
+.main-logo a{
+    text-decoration: none;
+    
+    color: black;
+    font-weight: 700;
+}

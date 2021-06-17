@@ -1,6 +1,5 @@
 *{
-    margin: 0;
-    padding: 0;
+  
     box-sizing: border-box;
     font-family: sans-serif;
     /* border: 1px solid black; */
@@ -9,37 +8,29 @@
     text-align: center;
     background-color: black;
     color: white;
-    height: 30px;
-padding-top: 5px;
+    height: 3rem;
+    padding-top: 1rem;
 
 }
 .top-p a{
     color: white;
 }
 .navsec{
-    background-color: white;
+   
     /* position: fixed; */
     width: 100%;
-    z-index: 999;
-    height: 60px;
-    line-height: 65px;
+    height: 5rem;   
 }
-.navsec .wrapper{
-max-width: 1200px;
-padding: 0 30px;
-margin: auto;
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.wrapper .logo a{
+
+/* .wrapper .logo a{
     color: #242424;
     text-decoration: none;
     font-size: 27px ;
-}
-.wrapper .nav-links{
+    border: 1px solid;
+} */
+/* .wrapper .nav-links{
     display: inline-flex;
-}
+} */
 .nav-links li{
     list-style: none;
     /* padding: 10px; */
@@ -69,16 +60,18 @@ justify-content: space-between;
 
 /* sub manu start */
 .nav-links li:hover .mega-box{
-    top: 65px;
+    top: 6rem;
+    
     opacity: 1;
     visibility: visible;
     transition: all 0.3s ease;
-    
+    z-index: 1;
 }
 .mega-box{
     position: absolute;
     top:80px ;
     width: 100%;
+    
     left: 0;
     opacity: 0;
     visibility: hidden;
@@ -86,11 +79,11 @@ justify-content: space-between;
 
 }
 .mega-box .content{
-    background: rgb(231, 229, 229);
+    background: rgb(196, 219, 223);
     padding: 25px 20px;
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 100%;
     justify-content: space-between;
 
 }
@@ -137,23 +130,14 @@ justify-content: space-between;
     color: #242424;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* log in submanu  */
-.nav-links:hover .mega-box-in{
-    top: 65px;
+.nav-link-login:hover .mega-box-in{
+    top: 6rem;
     opacity: 1;
     visibility:visible;
     transition: all 0.3s ease;
     background-color:#E7E5E5;
+    z-index: 1;
     /* border:1px solid black; */
    
 }

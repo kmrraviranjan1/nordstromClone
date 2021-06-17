@@ -24,6 +24,7 @@ body{
 }
 
 .body-cont{
+  
     width: 96vw;
     margin: 1rem auto;
     padding: 1rem;
@@ -112,6 +113,9 @@ body{
 .mrOne{
     margin-right: 1rem;
 }
+.mrTwo{
+    margin-right: 2rem;
+}
 .mrff{
     margin-right: 55%;
 }
@@ -176,7 +180,10 @@ img{
 }
 /* item.html image ends */
 
-
+.social-icon{
+    width: 1rem;
+    height: 1rem;
+}
 
 
 
@@ -320,4 +327,8 @@ ul{
     font-size: 2rem;
     font-weight: 400;
     
+}
+
+.footer{
+    margin-top: 2rem;
 }
