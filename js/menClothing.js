@@ -3,8 +3,9 @@ let parent = document.getElementById('parent');
     
 
 let original = JSON.parse(localStorage.getItem('clothes'));
-
+let itemavailableP = document.getElementById('item-available');
 let itemavailable = 0;
+itemavailableP.innerHTML = `${itemavailable} items`;
 appendItem(original);
 
 
@@ -13,6 +14,7 @@ function appendItem(data) {
     
     data.forEach(function (element) {
         itemavailable++;
+        itemavailableP.innerHTML = `${itemavailable} items`;
         let card = document.createElement('div');
         card.setAttribute('class','card')
         let imgcard = document.createElement('div');
@@ -142,7 +144,7 @@ function sortRating() {
     parent.innerHTML = null;
     let newData = JSON.parse(localStorage.getItem('clothes'));
     newData.sort(function (a, b) {
-        return a.rating - b.rating;
+        return  b.rating - a.rating;
     })
     appendItem(newData)
     
@@ -170,11 +172,12 @@ function sortphl() {
 
 let sort = document.getElementById('sort');
 sort.onclick = function () {
+    itemavailable = 0;
     sorting()
 };
 
-let itemavailableP = document.getElementById('item-available');
-itemavailableP.innerHTML = `${itemavailable} items`;
+// let itemavailableP = document.getElementById('item-available');
+// itemavailableP.innerHTML = `${itemavailable} items`;
 
 // sidebar filters visible
 
@@ -201,7 +204,7 @@ let activwear = document.getElementById('activewear');
 
 activwear.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.category=="Activewear"
@@ -215,7 +218,7 @@ let shirt = document.getElementById('shirt');
 
 shirt.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.category=="Shirts"
@@ -229,7 +232,7 @@ let suit = document.getElementById('suit');
 
 suit.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.category=="Suits & Separates"
@@ -244,7 +247,7 @@ let hoodie = document.getElementById('hoodie');
 hoodie.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
     
-    
+    itemavailable = 0;
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.category=="Sweatshirts & Hoodies"
     })
@@ -257,7 +260,7 @@ let cotton = document.getElementById('cotton');
 
 cotton.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.material=="100% cotton"
@@ -271,7 +274,7 @@ let linen = document.getElementById('linen');
 
 linen.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.material=="100% Linen"
@@ -285,7 +288,7 @@ let denim = document.getElementById('denim');
 
 denim.onclick = function () {
     let filteredItems = JSON.parse(localStorage.getItem('clothes'))
-    
+    itemavailable = 0;
     
     let filteredclothes = filteredItems.filter(function (cloth) {
         return cloth.material == "Denim";
