@@ -22,15 +22,6 @@
     height: 5rem;   
 }
 
-/* .wrapper .logo a{
-    color: #242424;
-    text-decoration: none;
-    font-size: 27px ;
-    border: 1px solid;
-} */
-/* .wrapper .nav-links{
-    display: inline-flex;
-} */
 .nav-links li{
     list-style: none;
     /* padding: 10px; */
@@ -130,6 +121,10 @@
     color: #242424;
 }
 
+
+
+
+
 /* log in submanu  */
 .nav-link-login:hover .mega-box-in{
     top: 6rem;
@@ -145,7 +140,7 @@
     position:absolute;
     top: 80px;
     width: 15%;
-    right: 8;
+    right: 20;
     opacity:0;
     visibility:hidden;
 }
