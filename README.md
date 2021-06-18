@@ -4,6 +4,8 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 
 ### This is our first team collaboration project at Full Stack-development bootcamp in [Masai School](https://www.masaischool.com/url)
 
+## [Project Demo](https://kmrraviranjan1.github.io/nordstromClone/url)
+
 ## Team Members & collaborators
 #### 1) Ravi Ranjan Kumar
 #### 2) Md Tausif
