@@ -142,6 +142,42 @@ const cloth = [
         sizeInfo: ['True to size.',],
         care: ['27 1/2" length (size Medium)','Drawstring hood','Ribbed cuffs and hem.','Kangaroo pocket',"58% cotton, 37% polyester, 5% spandex",'Machine wash, tumble dry','Imported',"Men's Clothing",'Item #6055001'],
         brandDesc: "What we wear prepares us for what's ahead, whether that's a walk in the rain, a moment of stillness or a hike up a mountain. Zella is created with comfort innovation and performance technology for women, men and kids—a wardrobe of progressive designs that make us feel strong, balanced, engaged in the now and ready for what's next. Life is lived in motion. Zella is made to move."
+    },
+    {
+        category: "Suits & Separates",
+        subCategory: "Suit & sets",
+        brand: "TOPMAN",
+        gender: "men",
+        material: "100% cotton",
+        tag: "new",
+        sale: "regular",
+        fit: "true to size",
+        size: "L",
+        big: "regular",
+        style: "Pullover",
+        pcolor: "#302C44",
+        scolor: "#4C4B50",
+        name: "Men's Utility Stretch Cotton Jacket",
+        description: "Stretchy cotton construction means a flexible fit in a workwear-inspired jacket with versatile appeal.",
+        image: "https://n.io.nordstrommedia.com/id/sr3/3a5cfb0f-2af4-4f9d-9743-726b9e3c649d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+        imageIcon:"https://n.io.nordstrommedia.com/id/sr3/3a5cfb0f-2af4-4f9d-9743-726b9e3c649d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        quickImage: "https://n.io.nordstrommedia.com/id/sr3/f5006473-6869-48ab-8d8c-ef8e284ddaf3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=860&h=1318&dpr=2",        
+        quickImageIcon:"https://n.io.nordstrommedia.com/id/sr3/f5006473-6869-48ab-8d8c-ef8e284ddaf3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        rawMaterialImage:"https://n.io.nordstrommedia.com/id/sr3/91fbdaec-8a77-4ee9-9242-cf3ef3fde4ff.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        rawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/91fbdaec-8a77-4ee9-9242-cf3ef3fde4ff.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        videoIcon: "https://n.io.nordstrommedia.com/id/sr3/d36b87c1-2610-4f69-bea1-a87f62fb1994.jpeg",
+        cimage:"https://n.io.nordstrommedia.com/id/sr3/380e3d19-cacb-42f4-8076-29ab407ed0bc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        cimageIcon: "https://n.io.nordstrommedia.com/id/sr3/380e3d19-cacb-42f4-8076-29ab407ed0bc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        cquickImage:"https://n.io.nordstrommedia.com/id/sr3/6f8a5848-69ad-4737-bf9b-cc8909162869.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        cquickImageIcon: "https://n.io.nordstrommedia.com/id/sr3/6f8a5848-69ad-4737-bf9b-cc8909162869.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        crawMaterialImage: "https://n.io.nordstrommedia.com/id/sr3/2f998b77-26b7-43d8-9bf1-518e9b778291.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196&dpr=2",
+        crawMaterialImageIcon:"https://n.io.nordstrommedia.com/id/sr3/2f998b77-26b7-43d8-9bf1-518e9b778291.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=60&h=90",
+        price: "60",
+        rating: "4",
+        raters: "18",
+        sizeInfo: ['True to size.'],
+        care: ['27 1/2" length (size Medium)','Front zip closure','Spread collar','Chest button-flap pockets; side-seam pockets','Lined','98% cotton, 2% elastane','Machine wash, tumble dry','Imported',"Men's Clothing",'Item #6207465'],
+        brandDesc: "From British high-street darling to international phenom, Topman has delivered affordable, trend-right styles for men since 1978. Best known for cool clothes with a rock-and-roll attitude, Topman offerings include suits, jeans, shirts, jackets, accessories and more. Topman is a staunch supporter of UK menswear design talent, and their TOPMAN DESIGN collection opens London Fashion Week Men's every year."
     }
 
 ]
@@ -152,3 +188,4 @@ if (JSON.parse(localStorage.getItem('clothes')) == null) {
 }
 
 
+// localStorage.clear()

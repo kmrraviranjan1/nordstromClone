@@ -65,7 +65,7 @@ bag.forEach(function(element) {
         totalDiv.innerHTML = `$${total}`
         if (total <= 0) {
             alert('Your cart is empty Please login to see your cart items')
-            window.location.href='login.html'
+            window.location.href='Signup1.html'
         }
         curParent.remove()
     }
