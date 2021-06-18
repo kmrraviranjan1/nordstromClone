@@ -41,7 +41,7 @@ function appendnoordClubTextDiv() {
 
 setInterval(function () {
     appendnoordClubTextDiv()
-}, 4000);
+}, 2000);
 
 
 // box 1 functionality ends here text is changing
@@ -70,7 +70,7 @@ function appendhealthGlowImgDiv() {
 }
 setInterval(function () {
     appendhealthGlowImgDiv()
-}, 4000);
+}, 2000);
 
 
 //Health and glow images changing functionality 
@@ -102,7 +102,7 @@ function appendgiveLittleBigImgDiv() {
 }
 setInterval(function () {
     appendgiveLittleBigImgDiv()
-}, 4000);
+}, 2000);
 
 
 //give a little wow big images changing functionality 
