@@ -14,7 +14,7 @@ function bagshow() {
         var img = document.createElement("img")
         img.src = el.image
         p1.textContent = `Name ${el.name}`
-        p2.textContent = `price ${el.price}`
+        p2.textContent = `price =$ ${el.price}`
         p3.textContent = `size ${el.size}`
 
         div.append(img, p1, p2, p3)
@@ -46,13 +46,38 @@ function addprice() {
 
 
     // console.log(sum, taxe, shipping, totalprice)
-    items_price.append(`Items Price:- ${sum}`)
-    Shipping_fee.append(`Shipping fee:- ${shipping}`)
-    taxes.append(`Taxe GST 18%:- ${taxe}`)
-    total.append(`Total Price :- ${totalprice}`)
+    items_price.append(`Items Price:- $ ${sum}`)
+    Shipping_fee.append(`Shipping fee:- $ ${shipping}`)
+    taxes.append(`Taxe GST 18%:- $ ${taxe}`)
+    total.append(`Total Cart Price:- $ ${totalprice}`)
     // total.append(total)
 }
 addprice()
+
+function promocode() {
+    var promo = document.getElementById("promo").value
+    var total = document.getElementById("total")
+    // console.log("tausif", promo)
+    var sum = 0;
+    cartproduct.forEach(function (el) {
+        // console.log(el.Price)
+        sum += Number(el.price)
+    })
+    // console.log(sum)
+    var taxe = sum * (18 / 100)
+    var shipping = 200
+    var totalprice = taxe + sum + shipping
+
+    if (promo == "masai30") {
+        var dis = (totalprice * 30) / 100
+        var finalsum = totalprice - dis
+       total.textContent = `Total Cart Price:- $  ${finalsum}`
+    } else {
+        alert("Type Correct Promo Code")
+    }
+
+}
+// promocode()
 
 function usersAdd() {
     var parent = document.getElementById("showaddress")
