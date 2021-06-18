@@ -28,9 +28,11 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 7) Readme page of github
 ### By Md Tausif
 8) Header on all pages
-9) Login page
-10) Create Account page
-11) Checkout Page 
+9) Registerd user validation page
+10) Login page
+11) Create Account page
+12) Created Account congratulation page 
+13) Checkout Page 
 
 ## User Interface
 1) From home page a user can got to category product from header menu or links given displayed at different sections in home page body sub-sections:-
@@ -74,7 +76,34 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
     5) When a item is saved for later, a alert is displayed containing message to login to see the saved items from user profile.
     6) If the last available item of bag is saved for later, customer is re-directed to signIn/create account page.
     7) If checkout is clicked  the customer is redirected to checkout page.
-6)
 
+6) on checkout page a customer can :-
+     1) see the total price including taxes and shipping charges.
+     2) Images of items purchasing.
+     3) Apply promocode masai30 to get 30% discount on checkout amount
+     4) Fill the address in address section
+     5) after submiting address his addres short summary is displayed at payment page.
+     6) After filling card details form validation is done.
+     7) After succesfully making payment:-
+          1) messages is displayed payment successfull
+          2) after that order status
+          3) next order delivery date
+          4) and finally order delivery succes message
+7) On clicking signin or create account customer is diverted to Registerd user validation page.
+8) On user validation page:-
+     1) User is asked for email, and customer is validated from database of registered user.
+     2) If registerd user he is directed to login page.
+     3) If new user he is directed to create account page.
+9) On login page a user needs to validate his/her credentials:-
+     1) If wrong credential alert message displayed.
+     2) If correct credential user is redirected to men's shopping page.
+10) On signup page user is aked for other details and then directed to create account congratulation page.
+11) On congratulation page customer needs to update mobile number and redirected to shopping page.
+12) All pages have footer included with links to NORDSTROM social page.
+
+
+## all images are taken from [Nordstrom](https://www.nordstrom.com/url) only for educational and learning puropose.
+### all icons and fonts taken from open sources from google search.
+### We have no copyrights over images, icons or fonts.
 
 
