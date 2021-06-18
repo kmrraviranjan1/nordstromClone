@@ -41,15 +41,15 @@ function addprice() {
         sum += Number(el.price)
     })
     var taxe = sum * (18 / 100)
-    var shipping = 200
+    var shipping = 100
     var totalprice = taxe + sum + shipping
 
 
     // console.log(sum, taxe, shipping, totalprice)
     items_price.append(`Items Price:- $ ${sum}`)
-    Shipping_fee.append(`Shipping fee:- $ ${shipping}`)
-    taxes.append(`Taxe GST 18%:- $ ${taxe}`)
-    total.append(`Total Cart Price:- $ ${totalprice}`)
+    Shipping_fee.append(`Shipping fee:-       $ ${shipping}`)
+    taxes.append(`Taxe GST 18%:-           $ ${taxe}`)
+    total.append(`Total Cart Price:-        $ ${totalprice}`)
     // total.append(total)
 }
 addprice()
