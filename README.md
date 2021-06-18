@@ -1,10 +1,10 @@
 # Unit 2 Project
-## Clone of [Nordstrom](https://www.nordstrom.com/url) an US based e-commerce company.
+## Clone of [Nordstrom](https://www.nordstrom.com/) an US based e-commerce company.
 Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoes and accessories for men, women and kids.
 
-### This is our first team collaboration project at Full Stack-development bootcamp in [Masai School](https://www.masaischool.com/url)
+### This is our first team collaboration project at Full Stack-development bootcamp in [Masai School](https://www.masaischool.com/)
 
-## [Project Demo](https://kmrraviranjan1.github.io/nordstromClone/url)
+## [Project Demo](https://kmrraviranjan1.github.io/nordstromClone/)
 
 ## Team Members & collaborators
 #### 1) Ravi Ranjan Kumar
