@@ -4,6 +4,9 @@
     font-family: sans-serif;
     /* border: 1px solid black; */
 }
+.main-header{
+   width: 93vw;
+}
 .top-p{
     text-align: center;
     background-color: black;
