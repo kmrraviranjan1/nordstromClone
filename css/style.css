@@ -279,10 +279,10 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.add-sign::after {
+.add-sign::before {
   content: " \002B";
   margin: auto;
-  padding-left: 3rem;
+  padding-right: 2rem;
 
   font-size: 2rem;
   font-weight: 400;
