@@ -7,6 +7,7 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 ## [Project Demo](https://kmrraviranjan1.github.io/nordstromClone/)
 
 ## Team Members & collaborators
+
 #### 1) Ravi Ranjan Kumar
 #### 2) Md Tausif
 
@@ -20,6 +21,7 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 ##### 7) VS Code editor
 
 ## Pages cloned
+---
 ### By Ravi Ranjan Kumar
 1) Home Page
 2) Men's Page
@@ -35,7 +37,19 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 11) Create Account page
 12) Created Account congratulation page 
 13) Checkout Page 
-
+---
+HomePage
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/homePage.png' alt ='homepage' width="80%">
+---
+Clothing page
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/clothingPage.png' alt ='clothing' width="80%">
+---
+Apparel Detail
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/apparelDetailPage.png' alt ='apparel' width="80%">
+---
+Checkout Page
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/checkoutPage.png' alt ='checkout' width="80%">
+---
 ## User Interface
 1) From home page a user can got to category product from header menu or links given displayed at different sections in home page body sub-sections:-
      1) Modal on home page as soon a customer visits the home page.
