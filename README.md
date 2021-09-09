@@ -37,19 +37,33 @@ Nordstrom, Inc. is a leading fashion retailer offering compelling clothing, shoe
 11) Create Account page
 12) Created Account congratulation page 
 13) Checkout Page 
+14) 
 ---
-HomePage
-<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/homePage.png' alt ='homepage' width="80%">
+
+### HomePage
+
 ---
-Clothing page
-<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/clothingPage.png' alt ='clothing' width="80%">
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/homePage.png' alt ='homepage' width="100%">
+<!-- --- -->
+
+### Clothing page
+
 ---
-Apparel Detail
-<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/apparelDetailPage.png' alt ='apparel' width="80%">
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/clothingPage.png' alt ='clothing' width="100%">
+<!-- --- -->
+
+### Apparel Detail
+
 ---
-Checkout Page
-<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/checkoutPage.png' alt ='checkout' width="80%">
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/apparelDetailPage.png' alt ='apparel' width="100%">
+<!-- --- -->
+
+### Checkout Page
+
 ---
+<img src='https://github.com/kmrraviranjan1/nordstromClone/blob/development/images/readme/checkoutPage.png' alt ='checkout' width="100%">
+<!-- --- -->
+
 ## User Interface
 1) From home page a user can got to category product from header menu or links given displayed at different sections in home page body sub-sections:-
      1) Modal on home page as soon a customer visits the home page.
